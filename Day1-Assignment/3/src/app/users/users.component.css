@@ -1,0 +1,27 @@
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-container > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 20px;
+    width: 20%;
+    border: 1px solid blue;
+    border-radius: 10px;
+    box-shadow: 5px 5px;
+  }
+
+button {
+    margin: 10px;
+    margin-top: 20px;
+    font-size: 20px;
+    padding: 10px;
+    color: whitesmoke;
+    background-color: green;
+    border-radius: 5px;
+    border-color: whitesmoke;
+}

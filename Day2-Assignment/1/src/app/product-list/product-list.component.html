@@ -1,0 +1,5 @@
+<div  class="flex-container">
+<div *ngFor="let p of productArray | categoryFilter:category">
+<span>Product: <b>{{p.pname}}</b></span> 
+</div>
+</div>

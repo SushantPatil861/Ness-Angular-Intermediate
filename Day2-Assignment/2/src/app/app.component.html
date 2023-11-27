@@ -1,0 +1,8 @@
+
+<div style="text-align: center;">
+    <h1>Product List</h1>
+    <hr>
+    <app-navbar [defaultCategory]="category" (categoryChange) = "setCategory($event)"></app-navbar>
+    <product-list [category]="category">
+    </product-list>
+</div>

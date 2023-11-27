@@ -1,0 +1,21 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+button {
+    padding: 5px 10px; 
+    font-size: 20px; 
+    border: 1px solid grey; 
+    color: grey; 
+    background-color: white;
+}
+button.clicked {
+    padding: 5px 10px; 
+    font-size: 20px; 
+    border: 1px solid grey; 
+    color: white; 
+    background-color: grey;
+}
+select {
+    padding: 5px 10px; 
+    font-size: 20px;
+}

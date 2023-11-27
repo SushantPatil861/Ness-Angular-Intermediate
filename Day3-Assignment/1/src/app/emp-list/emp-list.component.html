@@ -1,0 +1,18 @@
+<div>
+    <table style="position: fixed;">
+        <tr>
+            <th>Full Name</th>
+            <th>Job</th>
+            <th>Skills</th>
+            <th>Actions</th>
+        </tr>
+        <tbody>
+            <tr *ngFor="let emp of empArray | filter:deptNo; let i = index;  let x = odd; let y = even;" [ngClass]="{'white': x, 'grey': y}">
+                <td><span style="margin-right: 10px;"><img src={{emp.photo}} style="height: 20px; width: 20px;"/></span>{{emp.ename}}</td>
+                <td>{{emp.job}}</td>
+                <td>{{emp.skills}}</td>
+                <td><button style="background-color: red; border: 0px; color: white; padding: 5px;" (click)="deleteEmployee(emp.empno)">Delete</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

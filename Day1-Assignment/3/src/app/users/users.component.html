@@ -1,0 +1,8 @@
+<div  class="flex-container">
+<div *ngFor="let user of userArray | slice:0:limit">
+<span>User: <b>{{user.name}}</b></span> 
+<br><br>
+<span>Age: <b>{{user.age}}</b></span>
+</div>
+</div>
+<button *ngIf="limit<userArray.length"(click) = "limit=limit+4">Load More</button>

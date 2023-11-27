@@ -1,0 +1,20 @@
+table {
+    width: 100%;
+    text-align: left;
+}
+table th {
+    font-size:  20px;
+}
+table td {
+    font-size:  15px;
+}
+table tr {
+    height: 40px;
+}
+
+tr.white {
+    background-color: white;
+}
+tr.grey {
+    background-color: rgb(235, 235, 235);
+}

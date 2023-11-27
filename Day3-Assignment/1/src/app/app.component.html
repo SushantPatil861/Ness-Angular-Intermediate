@@ -1,0 +1,22 @@
+<h1>Employees</h1>
+
+<div style="display: flex;">
+  <div style="width: 90%">
+    <select [(ngModel)]="deptno">
+      <option value="10">Finance</option>
+      <option value="20">Technology</option>
+      <option value="30">Sales</option>
+      <option value="40">Housekeeping</option>    
+      <option value="-1"> All Departments </option>    
+    </select>
+  </div> 
+  <div style="float: right;">
+    <button [ngClass] = "isMode('List')?'clicked':''" (click) = "displayMode = 'List'">List</button>
+    <button [ngClass] = "isMode('Grid')?'clicked':''" (click) = "displayMode = 'Grid'">Grid</button>
+  </div>
+</div>
+<hr />
+<emp-list [deptNo]=deptno [empArray]="empArray" (employeeDeleted) = "deleteEmployeeById($event)" *ngIf="isMode('List')">
+</emp-list>
+<emp-grid [deptNo]=deptno [empArray]="empArray" *ngIf="isMode('Grid')">
+</emp-grid>
